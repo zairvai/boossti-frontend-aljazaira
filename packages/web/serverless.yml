@@ -1,3 +1,14 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: rintis
+# "app" enables Serverless Framework Dashboard features and sharing them with other Services.
+app: boossti-frontend-aljazaira
+service: app-service
+
+provider:
+  name: "aws"
+  runtime: "nodejs16.x"
+  region: "us-east-1"
+
 myNextApplication:
   component: '@sls-next/serverless-component@3.7.0'
   inputs:

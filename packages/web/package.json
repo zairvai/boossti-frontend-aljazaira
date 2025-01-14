@@ -10,6 +10,7 @@
     "build:unix": "NODE_OPTIONS=--max-old-space-size=8192 next build",
     "start": "next start",
     "deploy": "npx serverless",
+    "deploy2": "npx serverless deploy -s dev --force  --debug",
     "test": "jest --clearCache",
     "cypress": "npx cypress run-ct",
     "cypress:open": "npx cypress open",

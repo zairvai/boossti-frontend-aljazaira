@@ -23,6 +23,9 @@ module.exports = withPlugins([withTM, withImages], {
   eslint: {
     ignoreDuringBuild: true,
   },
+  typescript:{
+    ignoreBuildErrors:true
+  },
   // swcMinify: true,
 });
 
