@@ -6,7 +6,7 @@
     "dev": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next dev",
     "dev:unix": "NODE_OPTIONS=--max-old-space-size=8192 next dev",
     "debug": "NODE_OPTIONS='--inspect' next dev",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 next build",
     "build:unix": "NODE_OPTIONS=--max-old-space-size=8192 next build",
     "start": "next start",
     "deploy": "npx serverless",
@@ -129,6 +129,7 @@
     "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "serverless-next.js": "^1.15.0-alpha.2",
     "storybook-addon-apollo-client": "^4.0.11",
     "typescript": "4.6.3",
     "webpack": "^5.71.0"
